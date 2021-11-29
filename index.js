@@ -19,4 +19,4 @@ variableFormulario.addEventListener("submit", function (e) {
   const pesoABajar = pesoActual - pesoIdeal;
   mensajeFinal.innerText = `${nombre} ${apellido} tu peso a bajar es ${pesoABajar}`;
 });
-//comentario
+//comentario 2
