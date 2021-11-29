@@ -20,3 +20,4 @@ variableFormulario.addEventListener("submit", function (e) {
   mensajeFinal.innerText = `${nombre} ${apellido} tu peso a bajar es ${pesoABajar}`;
 });
 //hola
+//comentario 2
