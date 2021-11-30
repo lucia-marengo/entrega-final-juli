@@ -8,12 +8,14 @@ variableFormulario.addEventListener("submit", function (e) {
   const apellido = elementos.apellido.value;
   const pesoActual = parseInt(elementos.pesoActual.value);
   const pesoIdeal = parseInt(elementos.pesoIdeal.value);
-  /*agregar a la validacion que pesoActual > pesoIdeal y que no sean numeros negativos*/
   if (
     isNaN(pesoIdeal) ||
     isNaN(pesoActual) ||
     pesoActual === "" ||
-    pesoIdeal === ""
+    pesoIdeal === "" ||
+    pesoActual < pesoIdeal ||
+    pesoActual < 1 ||
+    pesoIdeal < 1
   )
     return alert("error");
   const pesoABajar = pesoActual - pesoIdeal;
